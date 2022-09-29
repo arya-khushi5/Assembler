@@ -1,0 +1,51 @@
+// My Input:
+
+# 1
+ CLA
+    LAC A
+    SUB B
+    BRN L1
+    DSP X1
+    CLA
+    BRZ L2
+L1: DSP B
+    CLA
+    BRZ L2
+L2: STP
+
+# 2!
+CLA
+INP x7
+INP y8
+LAC x7
+SUB y8
+BRN L1
+DSP x7
+CLA
+L1: DSP y8
+CLA
+STP
+
+
+
+
+// Ma'am's Input:
+
+# Incorrect Opcode
+CLA
+DAD X
+
+# ? Operand
+CLA X
+ADD Y
+
+# L not declared
+ADD X
+ADD Y
+BRN L
+
+# 
+ADD X
+L ADD Y
+BRN L
+
